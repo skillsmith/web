@@ -1,0 +1,32 @@
+
+		/*selectors picking elements DIRECTLY*/
+		p {background-color: green;}
+		body {background-color: gray;}
+
+		/*selectors picking elements via CLASS or ID*/
+		p.specialp {background-color: blue;}
+		#superspecialp{background-color: orange;}		/*can also be p#superspecialp */
+
+		/*selectors picking elements via its ATTRIBUTES*/
+		img[alt~="Punch"] { border-radius: 50%;}
+		
+		/*selectors picking elements via PARENT-CHILD relationship*/
+		#specialdiv2 > h4 {background-color: fuchsia;}
+
+		/*selectors picking elements via DESCENDANT relationship*/
+		div h4 {background-color: olive;}
+
+
+		/*selectors picking elements via SIBLING relationship*/
+		tr.trsuper + tr {	font-family: Arial; font-size: 12; color: fuchsia; }
+
+
+		/*selectors picking elements via PSEUDO-CLASS*/
+		img#dynamicimage:hover { border-radius: 30%;}
+		div:first-child {background-color: yellow;}
+		tr:nth-child(2n) {font-family: Arial; font-size: 12; color: white;}
+
+		/*selectors picking elements via COMBINATORS*/
+		#specialdiv > h2:first-child {background-color: purple;}
+		table.tableClass > tr th:first-letter {	font-family: Arial; font-size: 12; color: red; }
+		div.divclass > div blockquote:first-letter {background-color:orange;}
